@@ -2,9 +2,11 @@
 
 const Glue = require('@hapi/glue');
 const Manifest = require('./manifest');
-const Schmervice = require('schmervice');
+
 
 const DictionaryService = require('../lib/servicees/dictionary');
+
+require('dotenv').config();
 
 exports.deployment = async (start) => {
 
