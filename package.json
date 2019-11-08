@@ -13,6 +13,7 @@
     "haute-couture": "3.x.x",
     "lodash": "^4.17.15",
     "mongoose": "^5.7.5",
+    "ramda": "^0.26.1",
     "schmervice": "^1.2.0"
   },
   "devDependencies": {
