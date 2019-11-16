@@ -30,6 +30,9 @@ module.exports = new Confidence.Store({
     register: {
         plugins: [
             {
+                plugin: 'schmervice'
+            },
+            {
                 plugin: '../lib', // Main plugin
                 options: {}
             },
