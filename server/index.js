@@ -3,9 +3,6 @@
 const Glue = require('@hapi/glue');
 const Manifest = require('./manifest');
 
-
-const DictionaryService = require('../lib/servicees/dictionary');
-
 require('dotenv').config();
 
 exports.deployment = async (start) => {
@@ -14,11 +11,6 @@ exports.deployment = async (start) => {
     const server = await Glue.compose(manifest, { relativeTo: __dirname });
 
     await server.initialize();
-
-    server.method('getWord', DictionaryService.getWord);
-
-    // await server.register(Schmervice);
-    // server.registerService(DictionaryService);
 
     if (!start) {
         return server;
