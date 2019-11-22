@@ -33,8 +33,13 @@ module.exports = new Confidence.Store({
                 plugin: 'schmervice'
             },
             {
+                plugin: 'hapi-auth-jwt2'
+            },
+            {
                 plugin: '../lib', // Main plugin
-                options: {}
+                options: {
+                    jwtKey: process.env.APP_SECRET
+                }
             },
             {
                 plugin: {
