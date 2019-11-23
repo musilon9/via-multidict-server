@@ -38,7 +38,16 @@ module.exports = new Confidence.Store({
             {
                 plugin: '../lib', // Main plugin
                 options: {
-                    jwtKey: process.env.APP_SECRET
+                    jwtKey: {
+                        $filter: { $env: 'NODE_ENV' },
+                        $default: {
+                            $env: 'APP_SECRET',
+                            $default: 'app-secret'
+                        },
+                        production: {           // In production do not default to "app-secret"
+                            $env: 'APP_SECRET'
+                        }
+                    }
                 }
             },
             {
