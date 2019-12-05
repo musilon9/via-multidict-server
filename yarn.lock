@@ -1078,15 +1078,6 @@ handlebars@4.x.x:
   optionalDependencies:
     uglify-js "^3.1.4"
 
-hapi-auth-jwt2@^8.8.0:
-  version "8.8.0"
-  resolved "https://registry.yarnpkg.com/hapi-auth-jwt2/-/hapi-auth-jwt2-8.8.0.tgz#65aed2eba16b5648cfe43b57b5293a77d0a61321"
-  integrity sha512-Vh6oih5mrqfkgFE5fd68/8UlyEZhAVEaXPV0GKV3OcGffqLfFZsYqyw3m6px+xnOTjGAKT9Z0l3e+7/kvc9Mow==
-  dependencies:
-    "@hapi/boom" "^8.0.1"
-    cookie "^0.4.0"
-    jsonwebtoken "^8.5.1"
-
 handlebars@^4.5.1:
   version "4.5.2"
   resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.5.2.tgz#5a4eb92ab5962ca3415ac188c86dc7f784f76a0f"
@@ -1097,6 +1088,15 @@ handlebars@^4.5.1:
     source-map "^0.6.1"
   optionalDependencies:
     uglify-js "^3.1.4"
+
+hapi-auth-jwt2@^8.8.0:
+  version "8.8.0"
+  resolved "https://registry.yarnpkg.com/hapi-auth-jwt2/-/hapi-auth-jwt2-8.8.0.tgz#65aed2eba16b5648cfe43b57b5293a77d0a61321"
+  integrity sha512-Vh6oih5mrqfkgFE5fd68/8UlyEZhAVEaXPV0GKV3OcGffqLfFZsYqyw3m6px+xnOTjGAKT9Z0l3e+7/kvc9Mow==
+  dependencies:
+    "@hapi/boom" "^8.0.1"
+    cookie "^0.4.0"
+    jsonwebtoken "^8.5.1"
 
 hapi-swagger@^11.0.0:
   version "11.0.0"
@@ -1396,6 +1396,11 @@ locate-path@^3.0.0:
     p-locate "^3.0.0"
     path-exists "^3.0.0"
 
+lodash.get@^4.0.0:
+  version "4.4.2"
+  resolved "https://registry.yarnpkg.com/lodash.get/-/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
+  integrity sha1-LRd/ZS+jHpObRDjVNBSZ36OCXpk=
+
 lodash.includes@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/lodash.includes/-/lodash.includes-4.3.0.tgz#60bb98a87cb923c68ca1e51325483314849f553f"
@@ -1405,6 +1410,11 @@ lodash.isboolean@^3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/lodash.isboolean/-/lodash.isboolean-3.0.3.tgz#6c2e171db2a257cd96802fd43b01b20d5f5870f6"
   integrity sha1-bC4XHbKiV82WgC/UOwGyDV9YcPY=
+
+lodash.isequal@^4.0.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
+  integrity sha1-QVxEePK8wwEgwizhDtMib30+GOA=
 
 lodash.isinteger@^4.0.4:
   version "4.0.4"
@@ -1432,17 +1442,6 @@ lodash.once@^4.0.0:
   integrity sha1-DdOXEhPHxW34gJd9UEyI+0cal6w=
 
 lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.14, lodash@^4.17.15:
-lodash.get@^4.0.0:
-  version "4.4.2"
-  resolved "https://registry.yarnpkg.com/lodash.get/-/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
-  integrity sha1-LRd/ZS+jHpObRDjVNBSZ36OCXpk=
-
-lodash.isequal@^4.0.0:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
-  integrity sha1-QVxEePK8wwEgwizhDtMib30+GOA=
-
-lodash@^4.17.12, lodash@^4.17.14, lodash@^4.17.15:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
